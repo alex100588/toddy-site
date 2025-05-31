@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI", sans-serif;
+  background: #dd1919;
+  padding: 0.5rem 1rem;
+}
+
+.navbar img {
+  background: #c31919;
+  width: 6rem;
+  height: 4.5rem;
+  border-radius: 0.1rem;
+  margin-left: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+
+.navbar ul li {
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  font-family: "Atlassian Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #830ea3;
+}
+
+.navbar ul li:last-child {
+  margin-right: 3rem;
+}
+
+/* Button styles if needed */
+.nav-conect,
+.hero-connect1 {
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(267deg, #3a25da 0.36%, #830ea3 102%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border: none;
+}
+
+.nav-conect:hover {
+  transform: scale(1.02);
+}
+
+.hero-connect1:hover {
+  transform: scale(1.06);
+}
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .navbar img {
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+
+  .burger-menu i {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+  }
+
+  .nav-menu li a {
+    display: none;
+  }
+
+  .hero-connect1 {
+    display: none;
+  }
+
+  .show-menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    margin: 1.2rem 1rem;
+    background: none;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: start;
+    width: 100vw;
+    gap: 0;
+    font-size: 1.2rem;
+  }
+
+  .burger-menu i {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .navbar img {
+    width: 6rem;
+    height: 4.5rem;
+    margin-left: 0;
+  }
+}

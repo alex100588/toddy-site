@@ -1,0 +1,98 @@
+.produse-page {
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.produse-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.produse-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.produs-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.produs-card:hover {
+  transform: translateY(-6px);
+}
+
+.produs-img {
+  width: 100%;
+  height: 260px;
+  background-color: #e0e0e0;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.produs-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.produs-card h2 {
+  font-size: 1.6rem;
+  color: #111;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.produs-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .produse-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .produse-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .produs-card {
+    padding: 2rem;
+  }
+
+  .produse-page h1 {
+    font-size: 2rem;
+  }
+
+  .produs-img {
+    height: 220px;
+  }
+}

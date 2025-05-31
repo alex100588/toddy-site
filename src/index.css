@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: #302216;
+    color: white;
+    font-family: "Liter", serif;
+}
