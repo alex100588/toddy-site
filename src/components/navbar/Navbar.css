@@ -3,16 +3,32 @@
   align-items: center;
   justify-content: space-between;
   font-family: "Segoe UI", sans-serif;
-  background: #dd1919;
-  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #8e0e00, #1f1c18);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar img {
-  background: #c31919;
-  width: 6rem;
-  height: 4.5rem;
-  border-radius: 0.1rem;
-  margin-left: 2rem;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  filter: brightness(0) invert(1); /* alb dinamic */
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-menu {
@@ -21,51 +37,26 @@
   list-style: none;
   gap: 2rem;
   font-size: 1.1rem;
-}
-
-.navbar ul li {
-  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li a {
   font-family: "Atlassian Sans", sans-serif;
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-  color: #830ea3;
-}
-
-.navbar ul li:last-child {
-  margin-right: 3rem;
-}
-
-/* Button styles if needed */
-.nav-conect,
-.hero-connect1 {
-  padding: 0.8rem 2rem;
-  border-radius: 3rem;
-  background: linear-gradient(267deg, #3a25da 0.36%, #830ea3 102%);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.5s;
-  color: white;
-  border: none;
-}
-
-.nav-conect:hover {
-  transform: scale(1.02);
-}
-
-.hero-connect1:hover {
-  transform: scale(1.06);
+  color: #dd1919;
 }
 
 .burger-menu {
   display: none;
   font-size: 2rem;
   color: white;
+  cursor: pointer;
 }
 
 /* Responsive */
@@ -74,58 +65,42 @@
     display: block;
   }
 
-  .navbar img {
-    position: absolute;
-    top: 0.9rem;
-    left: 1rem;
-  }
-
   .nav-menu {
-    flex-direction: row;
-    margin-top: 4rem;
-  }
-
-  .burger-menu i {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #1f1c18;
     position: absolute;
-    right: 3rem;
-    top: 1.5rem;
-  }
-
-  .nav-menu li a {
-    display: none;
-  }
-
-  .hero-connect1 {
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
     display: none;
   }
 
   .show-menu {
     display: block !important;
   }
+
+  .nav-menu li {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .navbar {
-    margin: 1.2rem 1rem;
-    background: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-img {
+    width: 3rem;
+    height: 3rem;
   }
 
   .nav-menu {
-    flex-direction: column;
-    align-items: start;
-    width: 100vw;
-    gap: 0;
-    font-size: 1.2rem;
-  }
-
-  .burger-menu i {
-    position: absolute;
-    right: 1rem;
-  }
-
-  .navbar img {
-    width: 6rem;
-    height: 4.5rem;
-    margin-left: 0;
+    font-size: 1rem;
   }
 }

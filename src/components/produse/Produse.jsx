@@ -54,7 +54,7 @@ const produse = [
 
 const Produse = () => {
   return (
-    <div className="produse-page">
+    <div className="produse-page" id='produse'>
       <h1>Produsele Noastre</h1>
       <div className="produse-grid">
         {produse.map((produs) => (

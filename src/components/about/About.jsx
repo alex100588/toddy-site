@@ -72,7 +72,7 @@ const About = () => {
   }));
 
   return (
-    <div className="about-page">
+    <div className="about-page" id="about">
       <section className="about-intro">
         <h1>Despre Tody Group</h1>
         <p>
