@@ -1,3 +1,10 @@
+/* === Structură generală === */
+.navbar-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+/* === Navbar fix === */
 .navbar {
   display: flex;
   align-items: center;
@@ -10,6 +17,7 @@
   z-index: 1000;
 }
 
+/* === Logo === */
 .logo-container {
   display: flex;
   align-items: center;
@@ -21,7 +29,7 @@
   height: 3.5rem;
   object-fit: cover;
   border-radius: 0.3rem;
-  filter: brightness(0) invert(1); /* alb dinamic */
+  filter: brightness(0) invert(1);
 }
 
 .logo-text {
@@ -31,7 +39,35 @@
   font-weight: bold;
 }
 
-.nav-menu {
+/* === Linkuri generale === */
+.navbar ul li a,
+.anchor-link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: none;
+  font-family: "Atlassian Sans", sans-serif;
+}
+
+.navbar ul li a:hover,
+.anchor-link:hover {
+  color: #dddddd;
+}
+
+/* === Burger menu === */
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* === Meniu desktop === */
+.desktop-menu {
   display: flex;
   align-items: center;
   list-style: none;
@@ -41,48 +77,31 @@
   padding: 0;
 }
 
-.navbar ul li a {
-  font-family: "Atlassian Sans", sans-serif;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-  color: #dd1919;
-}
-
-.burger-menu {
+/* === Meniu mobil/tabletă === */
+.mobile-menu {
   display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
 }
 
-/* Responsive */
 @media screen and (max-width: 900px) {
   .burger-menu {
     display: block;
   }
 
-  .nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    background: #1f1c18;
-    position: absolute;
-    top: 4.5rem;
-    left: 0;
-    width: 100%;
-    padding: 1rem 2rem;
+  .desktop-menu {
     display: none;
   }
 
-  .show-menu {
-    display: block !important;
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background: #1f1c18;
+    padding: 1rem 2rem;
+    list-style: none;
+    gap: 1rem;
   }
 
-  .nav-menu li {
-    margin-bottom: 1rem;
+  .mobile-menu li {
+    font-size: 1.1rem;
   }
 }
 
@@ -100,7 +119,7 @@
     height: 3rem;
   }
 
-  .nav-menu {
+  .mobile-menu {
     font-size: 1rem;
   }
 }
