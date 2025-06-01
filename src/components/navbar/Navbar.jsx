@@ -30,7 +30,7 @@ const Navbar = () => {
         <ul className="nav-menu desktop-menu">
           <li><AnchorLink className="anchor-link" href="#home">Acasă</AnchorLink></li>
           <li><AnchorLink className="anchor-link" href="#about">Despre noi</AnchorLink></li>
-          <li><AnchorLink className="anchor-link" href="#produse">Produsele</AnchorLink></li>
+          <li><AnchorLink className="anchor-link" href="#produse">Produse</AnchorLink></li>
           <li><AnchorLink className="anchor-link" href="#contact">Contact</AnchorLink></li>
         </ul>
       </div>

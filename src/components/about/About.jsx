@@ -76,7 +76,7 @@ const About = () => {
       <section className="about-intro">
         <h1>Despre Tody Group</h1>
         <p>
-          Tody Group oferă automate de cafea moderne, echipate cu tehnologie de
+          Toddy Group oferă automate de cafea moderne, echipate cu tehnologie de
           ultimă generație, și o selecție premium de băuturi calde: cafea
           proaspăt măcinată pe loc, specialități 3în1, ciocolată caldă, cafea
           Irish și multe altele. Cu o experiență solidă de peste 15 ani pe
