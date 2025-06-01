@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 114.2rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -36,7 +36,7 @@
 
 .contact-left h3 {
   font-size: 2rem;
-  background: linear-gradient(267deg, #3a25da 0.36%, #830ea3 102%);
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

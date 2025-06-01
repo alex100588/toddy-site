@@ -50,30 +50,22 @@ const Contact = () => {
         <div className="contact-left">
           <h3>Hai să vorbim!</h3>
           <p>
-            Trimite-ne un mesaj sau sună-ne! Suntem disponibili pentru proiecte
-            de frontend, backend, design sau full stack development.
+           Hai să discutăm! Oferim soluții eficiente cu automate de cafea, gustări și produse adaptate nevoilor tale.
           </p>
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="mail" />
-              <p>alexandru_ionasc@yahoo.com</p>
+              <p>toddy@yahoo.com</p>
             </div>
             <div className="contact-detail">
               <img src={call_icon} alt="call" />
-              <a href="tel:+40733316975">0733 316 975</a>
+              <a href="tel:+40733316975">0728131985</a>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="location" />
               <p>România</p>
             </div>
-            <div className="contact-icons">
-              <a href="https://www.linkedin.com/in/ionasc-alexandru-328a2532b/" target="_blank" rel="noreferrer">
-                <i className="bi bi-linkedin"></i>
-              </a>
-              <a href="https://github.com/alex100588" target="_blank" rel="noreferrer">
-                <i className="bi bi-github"></i>
-              </a>
-            </div>
+            
           </div>
         </div>
         <form onSubmit={onSubmit} className="contact-right">
