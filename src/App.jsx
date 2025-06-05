@@ -1,22 +1,21 @@
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Home from "./components/home/Home";
-import Navbar from "./components/navbar/Navbar";
-import Produse from "./components/produse/Produse";
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './components/MainPage/MainPage';
+import ProductPage from './components/ProductPage/ProductPage';
+import Navbar from './components/navbar/Navbar';
+
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Produse />
-      
-      <Contact />
-      <Footer />
-    </div>
+    <>
+    <Navbar />
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+      </Routes>
+    </Router>
+    </>
   );
 };
 
